@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: #0f0d13;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.conteiner-principal {
+    display: grid;
+    grid-template-areas: 'a b' 'a c';
+    gap: 32px;  
+    
+}
+
+.player-vertical {
+    background: #2a2141;
+    padding: 38px;
+    grid-area: a;
+    border-radius: 10px;
+}
+
+.conteiner-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    align-items:center ;
+}
+
+.capa img {
+    width: 189px;
+    border-radius: 6px;
+    margin-bottom: 29px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #e1e1e6;
+}
+
+p {
+    font-size: 19px;
+    color: #e1e1e6e7;
+    line-height: 100%;
+    opacity: 0.7;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls-back, .controls-next {
+    width: 27px;
+}
+
+.controls-play {
+    width: 18px;
+}
+
+.control-track {
+    width: 100%;
+    position: relative;
+}
+
+.control-track::before {
+    content: '';
+    height: 6px;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    opacity: 0.30000001192092896;
+    background: #D9D9D9;
+}
+
+.control-track::after {
+    content: '';
+    height: 6px;
+    width: 80%;
+    display: block;
+    border-radius: 10px;
+    background: #D9D9D9;
+    position: absolute;
+    top: 0;
+}
+
+.time {
+    font-size: 14px;
+    color: #c4c4cc;
+    opacity: 0.7;
+
+    display: flex;
+    justify-content:space-between;
+    margin-top: 9px;
+}
+
+.total-time {
+    /* color: #C4C4CC;
+    font-size: 14.404px;
+    line-height: 160%; */
+}
+
+.player-horizontal {
+    background: #2a2141;
+    padding: 29px;
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    border-radius: 10px;
+}
+
+.capa2 {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    width: 300px;
+    height: 84px;
+}
+
+.capa2 img {
+    height: 100%;
+}
+
+.player-horizontal .controls {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.player-horizontal-menor {
+    background: #2a2141;
+    padding: 29px;
+    grid-area: c;
+}
+
+.player-horizontal-menor .controls {
+    display: flex;
+    margin-top: 29px;
+    justify-content: space-around;
+}
