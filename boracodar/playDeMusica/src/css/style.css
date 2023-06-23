@@ -9,7 +9,7 @@
 body {
     background-color: #0f0d13;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: #e1e1e6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,29 +17,33 @@ body {
     margin-top: 50px;
 }
 
-.conteiner-principal {
+.conteiner-one {
     display: grid;
     grid-template-areas: 'a b' 'a c';
     gap: 32px;  
-    
+
+    place-content: center;
+    height: 100vh;
 }
 
-.player-vertical {
+.player {
     background: #2a2141;
-    padding: 38px;
-    grid-area: a;
     border-radius: 10px;
-}
-
-.conteiner-vertical {
     display: flex;
     flex-direction: column;
+}
+
+.player-vertical {  
+    padding: 38px;
+    grid-area: a;   
+    
     gap: 29px;
-    align-items:center ;
+    align-items:center ; 
 }
 
 .capa img {
-    width: 189px;
+    width: 190px;
+    height: 190px;
     border-radius: 6px;
     margin-bottom: 29px;
 }
@@ -47,18 +51,17 @@ body {
 .info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
-h1 {
+.info h1 {
     font-size: 24px;
     font-weight: 700;
-    color: #e1e1e6;
+    
 }
 
-p {
+.info p {
     font-size: 19px;
-    color: #e1e1e6e7;
     line-height: 100%;
     opacity: 0.7;
 }
@@ -67,14 +70,6 @@ p {
     width: 100%;
     display: flex;
     justify-content: space-between;
-}
-
-.controls-back, .controls-next {
-    width: 27px;
-}
-
-.controls-play {
-    width: 18px;
 }
 
 .control-track {
@@ -113,20 +108,10 @@ p {
     margin-top: 9px;
 }
 
-.total-time {
-    /* color: #C4C4CC;
-    font-size: 14.404px;
-    line-height: 160%; */
-}
-
 .player-horizontal {
-    background: #2a2141;
     padding: 29px;
     grid-area: b;
-    display: flex;
-    flex-direction: column;
     gap: 29px;
-    border-radius: 10px;
 }
 
 .capa2 {
@@ -139,6 +124,7 @@ p {
 
 .capa2 img {
     height: 100%;
+    border-radius: 6px;
 }
 
 .player-horizontal .controls {
@@ -146,9 +132,7 @@ p {
     justify-content: space-around;
 }
 
-
 .player-horizontal-menor {
-    background: #2a2141;
     padding: 29px;
     grid-area: c;
 }
@@ -157,4 +141,5 @@ p {
     display: flex;
     margin-top: 29px;
     justify-content: space-around;
+    padding-inline: 28px;
 }
